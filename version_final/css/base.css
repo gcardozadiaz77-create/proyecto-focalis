@@ -1,0 +1,151 @@
+/* ==========================================================
+   FOCALIS · base.css
+   Tokens de diseño, reset y tipografía.
+   Idea: la atención es una linterna -> fondos oscuros que se
+   iluminan con un amarillo cálido sobre el verde institucional.
+   ========================================================== */
+
+:root {
+  /* Verde institucional (del brief) */
+  --verde-950: #071a0e;
+  --verde-900: #0b2a16;
+  --verde-800: #0f3b1f;
+  --verde-700: #155a2e;
+  --verde-600: #1d7a3e;
+  --verde-500: #2f9a52;
+  --verde-400: #5dbb7b;
+  --menta-300: #a9dcb8;
+  --menta-200: #cfeed8;
+  --menta-100: #e8f6ec;
+
+  /* Neutros */
+  --papel: #f5f3ea;
+  --papel-2: #ebe8da;
+  --blanco: #ffffff;
+  --tinta: #0f1f17;
+  --tinta-2: #3b4d42;
+  --tinta-3: #66776c;
+
+  /* Acentos */
+  --luz: #ffd24a;
+  --luz-fuerte: #ffc41f;
+  --luz-suave: #fff3c4;
+  --coral: #ff5f52;
+  --coral-suave: #ffe3df;
+  --azul: #4aa3ff;
+  --azul-pantalla: #1a2b45;
+
+  /* Formas */
+  --radio-s: 10px;
+  --radio-m: 16px;
+  --radio-l: 22px;
+  --radio-xl: 30px;
+
+  /* Sombras */
+  --sombra-1: 0 1px 2px rgba(7, 26, 14, .08), 0 4px 14px rgba(7, 26, 14, .06);
+  --sombra-2: 0 2px 4px rgba(7, 26, 14, .06), 0 14px 40px rgba(7, 26, 14, .12);
+  --sombra-3: 0 4px 8px rgba(7, 26, 14, .12), 0 24px 60px rgba(7, 26, 14, .22);
+
+  /* Movimiento: curvas fuertes (las de CSS por defecto son muy suaves) */
+  --ease-out: cubic-bezier(.23, 1, .32, 1);
+  --ease-in-out: cubic-bezier(.77, 0, .175, 1);
+  --ease-drawer: cubic-bezier(.32, .72, 0, 1);
+  --t-press: 140ms;
+  --t-ui: 200ms;
+  --t-entra: 260ms;
+  --t-sale: 150ms;
+
+  /* Tipografía */
+  --f-display: "Bricolage Grotesque", "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  --f-cuerpo: "Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SF Mono", Consolas, monospace;
+
+  /* Layout */
+  --gutter: clamp(16px, 4vw, 32px);
+  --ancho: 1120px;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--f-cuerpo);
+  font-size: 1rem;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--f-display);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -.01em;
+  margin: 0;
+  text-wrap: balance;
+}
+
+p { margin: 0; text-wrap: pretty; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+img, svg { display: block; max-width: 100%; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+a { color: inherit; }
+
+/* Foco visible para teclado */
+:focus-visible {
+  outline: 3px solid var(--luz-fuerte);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+.oscuro :focus-visible,
+.cabecera :focus-visible,
+.pie :focus-visible { outline-color: var(--luz); }
+
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.saltar {
+  position: absolute;
+  left: 16px; top: -60px;
+  z-index: 100;
+  background: var(--luz);
+  color: var(--tinta);
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: var(--radio-s);
+  transition: top var(--t-ui) var(--ease-out);
+}
+.saltar:focus { top: 12px; }
+
+/* Movimiento reducido: menos movimiento, no cero.
+   Se conservan los cambios de opacidad y color (ayudan a entender);
+   se quitan los desplazamientos, escalas y bucles decorativos. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-property: opacity, color, background-color, border-color, box-shadow !important;
+  }
+}
+
+/* Solo se anima el hover en dispositivos con puntero fino:
+   en táctil, el hover se queda "pegado" tras tocar. */

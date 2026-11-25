@@ -1,0 +1,126 @@
+{
+  "pagina": 1,
+  "escenas": [
+    {
+      "id": "1.1",
+      "tipo": "intro",
+      "titulo": "Mismo celular, resultados distintos",
+      "escenario": "Salón de clases. Sami está en su pupitre con el celular junto al cuaderno. Mira el tablero, luego el celular, luego otra vez el tablero.",
+      "ilustracion": "aula",
+      "expresion": "curioso",
+      "sami": "Hoy mi celular me ayudó a buscar una palabra que no entendía... y también me sacó de la clase tres veces.",
+      "narracion": "Mismo celular, resultados distintos. ¿Cómo es posible?",
+      "intencion": "Despertar la curiosidad e introducir la idea de que el celular puede ser distractor o herramienta."
+    },
+    {
+      "id": "1.2",
+      "tipo": "linterna",
+      "titulo": "Tu atención es una linterna",
+      "escenario": "Sami sostiene una linterna imaginaria cuya luz ilumina la explicación del profesor. Al tocarla, la luz se mueve entre tres cosas y lo demás queda en sombra.",
+      "narracion": "Tu atención es como una linterna: solo ilumina una cosa a la vez. Si la mueves todo el rato, no alcanzas a ver bien nada.",
+      "texto": "Toca la linterna y mira qué pasa.",
+      "interaccion": {
+        "objetos": [
+          { "id": "clase", "etiqueta": "La clase", "detalle": "Explicación del profe", "icono": "tablero" },
+          { "id": "chat", "etiqueta": "Un mensaje del chat", "detalle": "Algo nuevo llegó", "icono": "chat" },
+          { "id": "video", "etiqueta": "Un video", "detalle": "Solo 15 segundos", "icono": "play" }
+        ],
+        "alCompletar": "Lo que ilumina tu linterna se ve; todo lo demás queda en sombra."
+      },
+      "intencion": "Explicar qué es la atención con una imagen sencilla, partiendo de la experiencia y no de una definición."
+    },
+    {
+      "id": "1.3",
+      "tipo": "distractores",
+      "titulo": "Lo que jala tu linterna",
+      "escenario": "Alrededor de Sami aparecen cosas que jalan la linterna: ruido del pasillo, una vibración del celular, un bostezo, un compañero que muestra un video.",
+      "narracion": "El entorno también mueve tu linterna: el ruido, los avisos, el sueño, lo que pasa en el chat.",
+      "texto": "¿Cuál te pasa más seguido?",
+      "interaccion": {
+        "base": { "id": "clase", "etiqueta": "La clase", "icono": "tablero" },
+        "distractores": [
+          { "id": "ruido", "etiqueta": "Ruido del pasillo", "icono": "ruido", "efecto": "La luz se fue al pasillo." },
+          { "id": "vibracion", "etiqueta": "Una vibración del celular", "icono": "celular", "efecto": "La luz saltó al celular." },
+          { "id": "bostezo", "etiqueta": "Un bostezo", "icono": "luna", "efecto": "El sueño también mueve la luz." },
+          { "id": "compa", "etiqueta": "Un compañero con un video", "icono": "play", "efecto": "La luz se fue con el video." }
+        ],
+        "alElegir": "Anotado. Distraerse no es solo cuestión de «echarle ganas»: el entorno también cuenta."
+      },
+      "intencion": "Mostrar que el entorno influye en la atención, de modo que distraerse no es solo cuestión de «echarle ganas»."
+    },
+    {
+      "id": "1.4",
+      "tipo": "clasificar",
+      "titulo": "¿Te distrae o te ayuda?",
+      "escenario": "Aparecen dos caminos: en uno Sami se distrae con redes y en el otro usa el celular para aprender. Hay una tercera opción: «Depende».",
+      "narracion": "Mira estas acciones. ¿Te distraen o te ayudan? A veces... depende.",
+      "texto": "Lleva cada acción al camino que creas que le corresponde.",
+      "interaccion": {
+        "categorias": [
+          { "id": "distrae", "etiqueta": "Me distrae", "icono": "campana" },
+          { "id": "ayuda", "etiqueta": "Me ayuda", "icono": "check" },
+          { "id": "depende", "etiqueta": "Depende", "icono": "reloj" }
+        ],
+        "items": [
+          { "id": "historias", "texto": "Ver historias", "nota": "En el recreo es un descanso; en plena explicación te saca de la clase." },
+          { "id": "buscar", "texto": "Buscar un video que explique el tema", "nota": "Con permiso del profe, es una herramienta para aprender." },
+          { "id": "chat", "texto": "Responder un chat", "nota": "Depende del momento: en clase suele cortar tu atención." },
+          { "id": "calculadora", "texto": "Usar la calculadora", "nota": "Es una herramienta cuando la tarea la pide." },
+          { "id": "cortos", "texto": "Ver videos cortos", "nota": "En plena explicación, distrae." },
+          { "id": "foto", "texto": "Fotografiar el tablero", "nota": "Ayuda si luego lo revisas; depende de para qué lo uses." }
+        ],
+        "alCompletar": "Ver videos cortos en plena explicación te distrae. Buscar un video que explique el tema, con permiso del profe, te ayuda. El celular no es bueno ni malo: cuentan el momento y el propósito."
+      },
+      "intencion": "Distinguir el uso inapropiado del uso para aprender: el mismo celular es distractor o herramienta según el momento y el propósito."
+    },
+    {
+      "id": "1.5",
+      "tipo": "medidor",
+      "titulo": "Piensa en ayer",
+      "escenario": "Sami revisa en su celular el registro del tiempo de uso. Se pregunta cuánto lo usó ayer en clase o estudiando.",
+      "narracion": "Piensa en ayer. ¿Cuánto tiempo crees que usaste el celular mientras estabas en clase o estudiando?",
+      "texto": "Elige la respuesta que más se parece a tu caso.",
+      "interaccion": {
+        "opciones": [
+          { "id": "nada", "etiqueta": "Casi nada", "nivel": 0.12 },
+          { "id": "rato", "etiqueta": "Un rato", "nivel": 0.42 },
+          { "id": "bastante", "etiqueta": "Bastante", "nivel": 0.8 },
+          { "id": "nose", "etiqueta": "No lo sé", "nivel": null }
+        ],
+        "respuesta": "No hay respuestas buenas ni malas. Si no lo sabes, ya tienes una pista: mirar el tiempo de uso de tu celular es un buen primer paso."
+      },
+      "intencion": "Autodiagnóstico: que reconozcas tu propio patrón de uso y veas la medición como una herramienta."
+    },
+    {
+      "id": "1.6",
+      "tipo": "rompecabezas",
+      "titulo": "La clase sigue sin ti",
+      "escenario": "Sami intenta seguir la explicación del profesor, pero cada vez que mira el celular la clase avanza. Al volver ya falta un pedazo.",
+      "narracion": "Cada vez que miras el celular, la clase sigue sin ti. Cuando vuelves, ya falta un pedazo.",
+      "sami": "¿Qué estaban diciendo? Ya no entiendo...",
+      "samiDiferido": true,
+      "texto": "Mira el celular unas cuantas veces y observa la explicación.",
+      "interaccion": {
+        "frase": ["Cada", "vez", "que", "miras", "el", "celular,", "la", "clase", "sigue", "sin", "ti."],
+        "boton": "Mirar el celular",
+        "piezasPorVez": 2,
+        "maximo": 4,
+        "alTerminar": "Cuatro vistazos y la explicación quedó llena de huecos."
+      },
+      "intencion": "Mostrar cómo una atención fragmentada afecta lo que se aprende."
+    },
+    {
+      "id": "1.7",
+      "tipo": "guardar",
+      "titulo": "Tú decides",
+      "escenario": "Sami guarda el celular un momento y la linterna vuelve a iluminar la clase. Aparece la invitación a seguir.",
+      "narracion": "Tu atención vale mucho y tú decides en qué la pones. Pero a veces algo la roba sin que te des cuenta. Vamos a descubrir qué.",
+      "texto": "Siguiente página: qué hábitos dañan tu concentración.",
+      "interaccion": {
+        "boton": "Guardar el celular",
+        "botonAtras": "Sacarlo otra vez"
+      },
+      "intencion": "Cerrar con el mensaje «tú decides» e invitar a la página 2."
+    }
+  ]
+}

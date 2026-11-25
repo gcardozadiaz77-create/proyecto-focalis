@@ -1,0 +1,127 @@
+{
+  "pagina": 2,
+  "escenas": [
+    {
+      "id": "2.1",
+      "tipo": "notificaciones",
+      "titulo": "Solo iba a mirar un segundo",
+      "escenario": "En plena clase, el celular de Sami vibra sobre el pupitre. Aparece una notificación, luego otra. Al abrirla, un feed de videos empieza a pasar sin parar.",
+      "narracion": "Solo iba a mirar un segundo... y ya van diez minutos.",
+      "texto": "¿Te ha pasado?",
+      "interaccion": {
+        "notificaciones": [
+          { "app": "Chat", "texto": "Gabi: mira este video" },
+          { "app": "Redes", "texto": "Tienes 3 «me gusta» nuevos" }
+        ],
+        "boton": "Abrir la notificación",
+        "opciones": [
+          { "id": "si", "etiqueta": "Sí, muchas veces" },
+          { "id": "algo", "etiqueta": "A veces" },
+          { "id": "no", "etiqueta": "Casi nunca" }
+        ],
+        "respuesta": "A casi todos nos pasa. Y no es casualidad: sigue leyendo."
+      },
+      "intencion": "Que reconozcas la situación y te identifiques con ella."
+    },
+    {
+      "id": "2.2",
+      "tipo": "feed",
+      "titulo": "Un feed sin final",
+      "escenario": "La pantalla muestra un feed de videos que no tiene final. Sami intenta volver a la clase, pero el celular vuelve a vibrar.",
+      "narracion": "El scroll infinito es una lista que se renueva sola y nunca se acaba: nunca te dice «ya es suficiente».",
+      "texto": "Desliza hasta llegar al final del feed. Si puedes.",
+      "interaccion": {
+        "titulos": [
+          "Receta en 30 segundos",
+          "Truco de matemáticas",
+          "El gol de ayer",
+          "El baile del momento",
+          "Mascotas graciosas",
+          "Increíble: no vas a creer esto",
+          "Tutorial de peinado",
+          "Lo que pasó en el partido",
+          "Reto de 24 horas",
+          "Datos curiosos del espacio"
+        ],
+        "meta": 14,
+        "botonVolver": "Volver a la clase",
+        "alVolver": "Otra notificación. El celular vuelve a vibrar.",
+        "alCompletar": "Ya viste muchos videos y la lista sigue. No hay un «ya es suficiente»."
+      },
+      "intencion": "Que entiendas qué es el scroll infinito y por qué cuesta parar."
+    },
+    {
+      "id": "2.3",
+      "tipo": "lectura",
+      "titulo": "Léelo hasta el final",
+      "escenario": "Sami intenta leer un párrafo del libro. Cada vez que el celular vibra, la lectura se corta y hay que empezar la frase otra vez.",
+      "narracion": "Una notificación es un aviso que te dice «mírame ya». Aunque no la abras, tu mente ya se fue a ver qué era.",
+      "texto": "Intenta leer la frase hasta el final.",
+      "interaccion": {
+        "frase": "La atención sostenida es quedarte con una sola idea el tiempo suficiente para entenderla.",
+        "interrupciones": [4, 6, 3],
+        "avisos": ["Nuevo mensaje", "Alguien comentó tu foto", "Tu video favorito subió algo"],
+        "boton": "Leer siguiente palabra",
+        "alCompletar": "Con los avisos en silencio, la frase se lee de principio a fin."
+      },
+      "intencion": "Mostrar que las notificaciones están hechas para capturar la atención y compiten con la clase."
+    },
+    {
+      "id": "2.4",
+      "tipo": "multitarea",
+      "titulo": "Dos cosas a la vez",
+      "escenario": "Sami chatea con un amigo mientras copia lo que está en el tablero. Se ven dos hilos que intenta seguir al mismo tiempo y se enredan.",
+      "texto": "¿Puedes seguir la clase y chatear al mismo tiempo?",
+      "interaccion": {
+        "copia": "La fotosíntesis convierte la luz en energía.",
+        "chat": ["¿Vas a ir hoy?", "Respóndeme ya", "¿Viste lo de ayer?", "Hola???"],
+        "opciones": [
+          { "id": "si", "etiqueta": "Sí, sin problema" },
+          { "id": "mas", "etiqueta": "Más o menos" },
+          { "id": "no", "etiqueta": "No mucho" }
+        ],
+        "respuesta": "Hacer dos cosas a la vez, en realidad, es saltar de una a otra. Eso se llama multitarea: cansa y hace que se te escapen detalles."
+      },
+      "intencion": "Explicar la multitarea como otra forma de fragmentar la atención."
+    },
+    {
+      "id": "2.5",
+      "tipo": "comparar",
+      "titulo": "Compites contra algo muy bien diseñado",
+      "escenario": "Dos pantallas lado a lado: a la izquierda, la explicación de la clase, tranquila; a la derecha, un video rápido con sonidos y colores fuertes. Sami mira de una a otra.",
+      "narracion": "Los videos cortos y los colores fuertes están hechos para llamar tu atención rápido. La clase, a veces, va más despacio. No es que seas débil: compites contra algo muy bien diseñado.",
+      "texto": "Toca cada pantalla para mirarla.",
+      "interaccion": {
+        "izquierda": { "titulo": "La clase", "detalle": "Explicación tranquila", "icono": "tablero" },
+        "derecha": { "titulo": "Video rápido", "detalle": "Sonidos y colores fuertes", "icono": "play" },
+        "alMirar": "Mira dónde estaba tu atención: la pantalla rápida llama más, por diseño."
+      },
+      "intencion": "Explicar que el contenido llamativo compite con la clase, sin culpar al estudiante."
+    },
+    {
+      "id": "2.6",
+      "tipo": "multiple",
+      "titulo": "¿Cuáles te suenan?",
+      "escenario": "El estudiante marca los hábitos que se parecen a los suyos. Sami cierra con una pregunta.",
+      "narracion": "No es falta de voluntad: es un diseño pensado para que cueste soltarlo. Entonces, ¿cómo podemos solucionarlo? Primero veamos por qué, a veces, la clase no nos engancha.",
+      "texto": "Marca los que te suenan.",
+      "interaccion": {
+        "opciones": [
+          { "id": "suena", "etiqueta": "Revisar el celular apenas suena", "icono": "campana" },
+          { "id": "segundo", "etiqueta": "Abrir redes «solo un segundo»", "icono": "celular" },
+          { "id": "chatear", "etiqueta": "Chatear en clase", "icono": "chat" },
+          { "id": "videos", "etiqueta": "Ver videos mientras estudio", "icono": "play" }
+        ],
+        "resultado": [
+          "Ninguno te suena: ¡genial! Aun así, vale la pena seguir.",
+          "Marcaste 1. Con un hábito, ya hay por dónde empezar.",
+          "Marcaste {n}. Son hábitos comunes, y se pueden cambiar.",
+          "Marcaste {n}. Son hábitos comunes, y se pueden cambiar.",
+          "Marcaste los {n}. Tranquilo: el diseño es el culpable, no tú."
+        ]
+      },
+      "intencion": "Que identifiques tus hábitos y plantear la pregunta «¿cómo podemos solucionarlo?» e invitar a la página 3."
+    }
+  ],
+  "cierre": "Siguiente página: cómo motivarte en clase."
+}

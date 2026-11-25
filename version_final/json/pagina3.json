@@ -1,0 +1,140 @@
+{
+  "pagina": 3,
+  "escenas": [
+    {
+      "id": "3.1",
+      "tipo": "notas",
+      "titulo": "Un día pierdes un tema",
+      "escenario": "Salón de clases, varios días seguidos. Sami pierde el hilo de la clase una y otra vez. La libreta de notas muestra las calificaciones bajando poco a poco.",
+      "narracion": "Un día pierdes un tema. Al otro, otro. Y cada vez te importa un poquito menos.",
+      "sami": "Igual lo busco después… ¿para qué prestar atención?",
+      "texto": "Avanza los días y mira qué pasa con la libreta.",
+      "interaccion": {
+        "aviso": "Ejemplo del personaje, no son datos reales.",
+        "dias": [
+          { "dia": "Lunes", "nota": 4.5, "expresion": "neutro", "estado": "Sigue la clase con atención." },
+          { "dia": "Martes", "nota": 4.1, "expresion": "preocupado", "estado": "Pierde un tema." },
+          { "dia": "Miércoles", "nota": 3.6, "expresion": "preocupado", "estado": "Pierde otro." },
+          { "dia": "Jueves", "nota": 3.1, "expresion": "indiferente", "estado": "Le importa un poco menos." },
+          { "dia": "Viernes", "nota": 2.7, "expresion": "indiferente", "estado": "«¿Para qué prestar atención?»" }
+        ],
+        "alCompletar": "La distracción constante se acumula: menos atención, menos interés y notas más bajas."
+      },
+      "intencion": "Mostrar que la distracción constante se acumula: menos atención, menos interés y notas más bajas."
+    },
+    {
+      "id": "3.2",
+      "tipo": "multiple",
+      "titulo": "Cuando algo cuesta, hay una razón",
+      "escenario": "Aparecen cuatro tarjetas con causas comunes del desánimo. El estudiante toca las que le pasan; puede marcar varias.",
+      "narracion": "Cuando algo cuesta, hay una razón. ¿Cuál te pasa a ti?",
+      "texto": "Toca las que te pasan. Puedes marcar varias.",
+      "interaccion": {
+        "opciones": [
+          { "id": "aburrida", "etiqueta": "La clase me parece aburrida al lado de las redes", "icono": "celular" },
+          { "id": "sirve", "etiqueta": "Siento que esto no me sirve para nada", "icono": "x" },
+          { "id": "cansado", "etiqueta": "Estoy cansado o con sueño", "icono": "luna" },
+          { "id": "metas", "etiqueta": "No tengo metas claras", "icono": "meta" }
+        ],
+        "resultado": ["Todas son normales. Y todas se pueden cambiar."],
+        "fijo": true
+      },
+      "intencion": "Que reconozcas la causa de tu desmotivación sin sentirte culpable."
+    },
+    {
+      "id": "3.3",
+      "tipo": "relojes",
+      "titulo": "Dos relojes",
+      "escenario": "Dos relojes: uno rápido, que marca videos de pocos segundos, y uno lento, que marca una explicación larga. Sami mira el rápido y suspira.",
+      "narracion": "Después de un video que se resuelve en segundos, una explicación larga parece lenta. No es que la clase sea mala: compite con algo hecho para ser rápido.",
+      "texto": "Pulsa para arrancar los dos relojes.",
+      "interaccion": {
+        "rapido": { "etiqueta": "Videos cortos", "contador": "Videos vistos" },
+        "lento": { "etiqueta": "Explicación de la clase", "contador": "Ideas explicadas" },
+        "boton": "Arrancar relojes",
+        "duracion": 12,
+        "alCompletar": "Mismo tiempo, ritmos distintos. La clase no es mala: va a otro ritmo."
+      },
+      "intencion": "Explicar por qué la clase puede parecer aburrida frente a las redes."
+    },
+    {
+      "id": "3.4",
+      "tipo": "clasificar",
+      "titulo": "Viene de afuera, viene de adentro",
+      "escenario": "Tres frases flotan frente a Sami. El estudiante las lleva a «Viene de afuera» o «Viene de adentro».",
+      "narracion": "La motivación externa viene de afuera: una nota, un premio, evitar un regaño. La interna viene de adentro: curiosidad, sentirte capaz, querer lograr algo.",
+      "texto": "Lleva cada frase a donde creas que pertenece.",
+      "interaccion": {
+        "evaluar": true,
+        "categorias": [
+          { "id": "afuera", "etiqueta": "Viene de afuera", "icono": "flecha-izq" },
+          { "id": "adentro", "etiqueta": "Viene de adentro", "icono": "estrella" }
+        ],
+        "items": [
+          { "id": "regano", "texto": "Estudio para que no me regañen", "correcta": "afuera", "nota": "Es externa: la mueve evitar un regaño." },
+          { "id": "curiosidad", "texto": "Quiero entender cómo funciona esto", "correcta": "adentro", "nota": "Es interna: nace de tu curiosidad." },
+          { "id": "permiso", "texto": "Si saco buena nota me dan permiso", "correcta": "afuera", "nota": "Es externa: la mueve un premio." }
+        ],
+        "alCompletar": "La externa puede empujarte un rato. La interna es la que puedes construir tú."
+      },
+      "intencion": "Distinguir motivación externa e interna y mostrar que la interna se puede cultivar."
+    },
+    {
+      "id": "3.5",
+      "tipo": "completar",
+      "titulo": "Cambio 1: busca tu «para qué»",
+      "escenario": "Sami mira una tarea de porcentajes y se pregunta para qué sirve. Se le ocurre conectarla con algo suyo.",
+      "sami": "¿Porcentajes? ¿Para qué? … Ah, para saber cuánto me ahorro en un descuento.",
+      "narracion": "Cambio 1: busca tu para qué.",
+      "texto": "Completa: Esto me puede servir para ______",
+      "interaccion": {
+        "inicio": "Esto me puede servir para",
+        "opciones": [
+          "saber cuánto me ahorro en un descuento",
+          "entender las estadísticas de mi deporte favorito",
+          "repartir bien mi mesada"
+        ],
+        "otra": "Escribe tu propio «para qué»",
+        "clave": "paraQue"
+      },
+      "intencion": "Primer cambio pequeño: encontrar un sentido propio a lo que se aprende."
+    },
+    {
+      "id": "3.6",
+      "tipo": "meta",
+      "titulo": "Cambio 2: una meta pequeña",
+      "escenario": "Sami escribe en una nota una meta mínima para hoy y luego se estira un momento. El estudiante elige su meta pequeña entre tres opciones.",
+      "narracion": "Cambio 2: cuando la meta es enorme, cansa. Elige una pequeña: entender una sola idea de la clase de hoy.",
+      "texto": "Y si estás agotado, descansar también cuenta: con el cuerpo cansado cuesta concentrarse.",
+      "interaccion": {
+        "opciones": [
+          { "id": "duda", "etiqueta": "Anotar una duda para preguntarla" },
+          { "id": "explicar", "etiqueta": "Explicarme el tema con mis propias palabras" },
+          { "id": "ejercicio", "etiqueta": "Resolver un ejercicio" }
+        ],
+        "notaTitulo": "Mi meta mínima de hoy",
+        "clave": "metaMinima"
+      },
+      "intencion": "Segundo cambio pequeño: metas realistas y descanso frente al cansancio y la falta de metas."
+    },
+    {
+      "id": "3.7",
+      "tipo": "participar",
+      "titulo": "Cambio 3: participa",
+      "escenario": "Sami levanta la mano y pregunta algo al profesor; el profesor le repite el ejemplo. La voz narradora cierra la página.",
+      "sami": "Profe, ¿me puede repetir ese ejemplo?",
+      "narracion": "Cambio 3: cuando participas, la clase deja de ser solo para escuchar y se vuelve más tuya. Motivarte no es sentirte feliz todo el tiempo: es tener un motivo propio y pasos pequeños.",
+      "texto": "Siguiente página: técnicas para potenciar tu estudio.",
+      "interaccion": {
+        "boton": "Levantar la mano",
+        "profe": "El profe vuelve a explicar el ejemplo.",
+        "cambios": [
+          { "n": 1, "titulo": "Busca tu «para qué»", "clave": "paraQue", "vacio": "Lo defines en la escena 3.5" },
+          { "n": 2, "titulo": "Elige una meta pequeña", "clave": "metaMinima", "vacio": "Lo eliges en la escena 3.6" },
+          { "n": 3, "titulo": "Participa en clase", "fijo": "Levanta la mano cuando algo no te quede claro" }
+        ]
+      },
+      "intencion": "Tercer cambio pequeño: participar para sentirte parte de la clase; cierre e invitación a la página 4."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "pagina": 6,
+  "intro": {
+    "id": "6.1",
+    "narracion": "Una meta clara se cumple más fácil que una idea vaga. Aquí tienes tres plantillas para armar las tuyas.",
+    "escenario": "El estudiante ve tres plantillas y elige con cuál empezar. Sami aparece con una hoja en blanco."
+  },
+  "plantillas": [
+    {
+      "id": "dia",
+      "numero": 1,
+      "titulo": "Mi objetivo del día",
+      "icono": "check",
+      "escena": "6.2",
+      "instrucciones": [
+        "Escribe UNA cosa que quieres lograr hoy.",
+        "Escribe cómo sabrás que lo lograste.",
+        "Escribe cuándo lo harás.",
+        "Al final del día, marca si lo cumpliste."
+      ],
+      "campos": [
+        { "id": "quiero", "tipo": "texto", "etiqueta": "Hoy quiero", "ayuda": "Una sola cosa", "ejemplo": "Terminar el taller de ciencias" },
+        { "id": "sabre", "tipo": "texto", "etiqueta": "Sabré que lo logré cuando", "ayuda": "Algo que puedas comprobar", "ejemplo": "Tenga las 5 preguntas respondidas" },
+        { "id": "cuando", "tipo": "texto", "etiqueta": "Lo haré", "ayuda": "Hora y lugar", "ejemplo": "De 4:00 a 4:30 p. m., con el celular guardado en la mochila" },
+        { "id": "cumplido", "tipo": "check", "etiqueta": "Al final del día: cumplido", "ejemplo": true }
+      ],
+      "autor": "Ejemplo de Sami (9.º)"
+    },
+    {
+      "id": "semana",
+      "numero": 2,
+      "titulo": "Mi objetivo de la semana",
+      "icono": "calendario",
+      "escena": "6.3",
+      "instrucciones": [
+        "Elige una meta para la semana.",
+        "Divídela en tres pasos pequeños.",
+        "Ponle un día a cada paso.",
+        "El viernes revisa cuántos pasos cumpliste."
+      ],
+      "campos": [
+        { "id": "meta", "tipo": "texto", "etiqueta": "Meta de la semana", "ayuda": "Algo que quieras lograr", "ejemplo": "Prepararme para la evaluación de matemáticas del viernes" },
+        { "id": "p1", "tipo": "paso", "etiqueta": "Paso 1", "ayuda": "Un paso pequeño", "ejemplo": "Repasar mis apuntes", "dia": "Lunes" },
+        { "id": "p2", "tipo": "paso", "etiqueta": "Paso 2", "ayuda": "Otro paso pequeño", "ejemplo": "Resolver diez ejercicios", "dia": "Miércoles" },
+        { "id": "p3", "tipo": "paso", "etiqueta": "Paso 3", "ayuda": "El último paso", "ejemplo": "Hacerme un mini examen", "dia": "Jueves" },
+        { "id": "c1", "tipo": "check", "etiqueta": "Cumplí el paso 1", "ejemplo": true },
+        { "id": "c2", "tipo": "check", "etiqueta": "Cumplí el paso 2", "ejemplo": true },
+        { "id": "c3", "tipo": "check", "etiqueta": "Cumplí el paso 3", "ejemplo": false },
+        { "id": "ajuste", "tipo": "texto", "etiqueta": "Revisión del viernes", "ayuda": "¿Qué ajustarías la próxima semana?", "ejemplo": "Cumplí 2 de 3 pasos. El jueves se me complicó; la próxima semana lo hago el martes" }
+      ],
+      "autor": "Ejemplo de Sami"
+    },
+    {
+      "id": "reto",
+      "numero": 3,
+      "titulo": "Mi reto de atención",
+      "icono": "linterna",
+      "escena": "6.4",
+      "instrucciones": [
+        "Elige una acción para cuidar tu atención (por ejemplo, «No molestar» mientras estudias).",
+        "Decide durante cuántos días la harás.",
+        "Cada día anota cuántos bloques de estudio lograste sin mirar el celular.",
+        "Al final, compara con cómo estabas al empezar."
+      ],
+      "campos": [
+        { "id": "accion", "tipo": "texto", "etiqueta": "Mi acción", "ayuda": "Algo que cuide tu atención", "ejemplo": "Estudiar con «No molestar» y el celular guardado" },
+        { "id": "dias", "tipo": "texto", "etiqueta": "Durante cuántos días", "ayuda": "Por ejemplo: 5 días", "ejemplo": "5 días" },
+        { "id": "registro", "tipo": "registro", "etiqueta": "Bloques sin mirar el celular", "dias": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"], "ejemplo": ["1", "", "2", "", "3"] },
+        { "id": "final", "tipo": "texto", "etiqueta": "Al final comparo", "ayuda": "¿Cómo empecé y cómo terminé?", "ejemplo": "Empecé con 1 bloque y terminé con 3. Sí puedo regular mi atención" }
+      ],
+      "autor": "Ejemplo de Sami"
+    }
+  ],
+  "cierre": {
+    "id": "6.5",
+    "narracion": "Tu atención es tuya, y tú decides cómo usarla. Empieza hoy con una meta pequeña.",
+    "texto": "Vuelve al inicio cuando quieras repasar."
+  }
+}

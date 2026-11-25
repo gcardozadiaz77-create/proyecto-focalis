@@ -1,0 +1,12 @@
+Pon aquí los videos de las tarjetas de la página 5 (formato MP4, códec H.264/AAC).
+Los nombres deben ser exactamente estos:
+
+  video1.mp4  ->  Tarjeta 1 · "Tu atención es una linterna"      (Página 1)
+  video2.mp4  ->  Tarjeta 2 · "¿Por qué es tan difícil parar?"   (Página 2)
+  video3.mp4  ->  Tarjeta 3 · "El día que dejó de importarme"    (Página 3)
+  video4.mp4  ->  Tarjeta 4 · "Mi reto de una semana"            (Página 4)
+
+Si quieres otro nombre, cámbialo en json/pagina5.json (campo "archivo") y luego ejecuta:
+  python3 herramientas/generar-datos-offline.py
+
+Si un archivo todavía no está, esa tarjeta muestra el animatic de respaldo.

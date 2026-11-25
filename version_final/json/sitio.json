@@ -1,0 +1,168 @@
+{
+  "marca": {
+    "nombre": "FOCALIS",
+    "lema": "recupera tu atención",
+    "mensaje": "Tú puedes decidir cómo usar tu atención: con acciones sencillas puedes silenciar lo que te distrae y comprobar que tu concentración mejora.",
+    "error404": {
+      "titulo": "Error 404: Atención no encontrada.",
+      "lema": "Desconecta para Conectar."
+    }
+  },
+  "equipo": {
+    "institucion": "Universidad de Córdoba",
+    "curso": "Producción Multimedia · Grupo 2",
+    "fecha": "30/10/2026",
+    "integrantes": [
+      "Gabriel Cardoza",
+      "Cristian Ibañez",
+      "Carlos Hernández",
+      "Daniel Peluffo"
+    ]
+  },
+  "producto": {
+    "tematica": "La interferencia de las redes sociales en los ambientes escolares: cómo el celular, las notificaciones y el contenido constante fragmentan la concentración de los estudiantes y qué pueden hacer ellos mismos para sostener su atención al aprender.",
+    "publico": "Estudiantes de secundaria, grados 8.º a 11.º (aproximadamente 13 a 17 años), en entornos escolares e híbridos. No necesitas conocimientos previos para recorrer la herramienta.",
+    "objetivoGeneral": "Tomar conciencia crítica del papel de la atención en el aprendizaje autónomo y adquirir estrategias prácticas de autorregulación para sostener tu enfoque.",
+    "objetivos": [
+      "Reconocer tu propio patrón de uso del celular y distinguir cuándo es un distractor y cuándo es una herramienta para aprender.",
+      "Comprender cómo las notificaciones, el scroll infinito, la multitarea y el contenido llamativo capturan la atención, y cómo la distracción acumulada afecta el interés y el rendimiento.",
+      "Aplicar técnicas sencillas de autorregulación (silenciar notificaciones, estudiar en bloques, guardar el celular, medir resultados) y armar tus propias metas con plantillas."
+    ],
+    "duracionTotal": "Aprox. 15 minutos"
+  },
+  "brief": [
+    {
+      "titulo": "Problema educativo",
+      "texto": "Alta interferencia de las redes sociales en el entorno escolar, actuando como distractor que fragmenta la concentración.",
+      "icono": "campana"
+    },
+    {
+      "titulo": "¿Quién experimenta el problema?",
+      "texto": "Estudiantes de educación secundaria (grados 8.º a 11.º) influenciados por la hiperconectividad digital.",
+      "icono": "celular"
+    },
+    {
+      "titulo": "Contexto y restricciones",
+      "texto": "Entornos escolares con acceso a dispositivos y notificaciones que reducen la atención sostenida. Requiere dinámicas breves e interactivas.",
+      "icono": "tablero"
+    },
+    {
+      "titulo": "Qué deberías aprender o cambiar",
+      "texto": "Generar conciencia sobre el rol de la atención y brindar estrategias de autorregulación para sostener el enfoque en clase.",
+      "icono": "linterna"
+    }
+  ],
+  "paginas": [
+    {
+      "n": 1,
+      "archivo": "pagina1.html",
+      "corto": "Atención",
+      "titulo": "Cómo mejorar tu atención",
+      "idea": "Tu atención es limitada y tú decides en qué la inviertes: el mismo celular puede distraerte o ayudarte.",
+      "ruta": "Escena 1 «Redes sociales en el aula» y escena 3 «Efectos en el aprendizaje»",
+      "segundos": 100,
+      "icono": "linterna"
+    },
+    {
+      "n": 2,
+      "archivo": "pagina2.html",
+      "corto": "Hábitos",
+      "titulo": "Qué hábitos dañan tu concentración",
+      "idea": "El celular está diseñado para que cueste soltarlo: no es falta de voluntad.",
+      "ruta": "Escena 2 «Captura de la atención»",
+      "segundos": 95,
+      "icono": "campana"
+    },
+    {
+      "n": 3,
+      "archivo": "pagina3.html",
+      "corto": "Motivación",
+      "titulo": "Cómo motivarte en clase",
+      "idea": "La motivación se puede construir con cambios pequeños, empezando por entender de dónde viene el desánimo.",
+      "ruta": "Escena 3 «Efectos en el aprendizaje»",
+      "segundos": 105,
+      "icono": "estrella"
+    },
+    {
+      "n": 4,
+      "archivo": "pagina4.html",
+      "corto": "Técnicas",
+      "titulo": "Técnicas para potenciar el estudio",
+      "idea": "Con acciones sencillas puedes regular tu atención y comprobar que mejora.",
+      "ruta": "Escena 4 «Estrategias de autorregulación»",
+      "segundos": 115,
+      "icono": "reloj"
+    },
+    {
+      "n": 5,
+      "archivo": "pagina5.html",
+      "corto": "Videos",
+      "titulo": "Videos",
+      "idea": "Cuatro videos muy breves repasan lo que viste en cada página.",
+      "ruta": "Refuerzo de las escenas 1 a 4 (un video por cada página 1 a 4)",
+      "segundos": 150,
+      "icono": "play"
+    },
+    {
+      "n": 6,
+      "archivo": "pagina6.html",
+      "corto": "Objetivos",
+      "titulo": "Cómo hacer listas de objetivos",
+      "idea": "Lo que escribes y mides es más fácil de cumplir.",
+      "ruta": "Escena 4 «Estrategias de autorregulación»",
+      "segundos": 90,
+      "icono": "meta"
+    }
+  ],
+  "videoPresentacion": {
+    "titulo": "Error 404: Atención no encontrada",
+    "subtitulo": "Video de presentación del profesor de informática para toda la comunidad",
+    "escenas": [
+      {
+        "id": "E1",
+        "seg": 15,
+        "visual": {
+          "tipo": "pantallas"
+        },
+        "plano": "Plano general del aula, dolly in lento hacia el centro. Etalonaje frío.",
+        "voz": "Como su profesor de informática, saben que me apasiona la tecnología. Nos da acceso al código fuente del mundo entero. Pero últimamente, he notado un bug masivo en nuestro sistema: estamos físicamente en el salón, pero con la mente en la nube."
+      },
+      {
+        "id": "E2",
+        "seg": 20,
+        "visual": {
+          "tipo": "bateria"
+        },
+        "plano": "Primer plano de Andrés y plano detalle del celular oculto. Cámara al hombro. VFX: «Batería de Atención» en pixel art.",
+        "voz": "Muchos creen que tienen procesadores de múltiples núcleos, capaces de entender una explicación compleja y responder un chat al mismo tiempo. Alerta de spoiler: el cerebro no funciona así. Cuando divides tu atención, solo estás saturando tu memoria RAM. Y el resultado siempre es el mismo: un lag tremendo en tu aprendizaje."
+      },
+      {
+        "id": "E3",
+        "seg": 20,
+        "visual": {
+          "tipo": "montaje"
+        },
+        "plano": "Serie de planos medios cortos con jump cuts. Swoosh en cada corte.",
+        "voz": "Esos algoritmos están programados por las mentes más brillantes de Silicon Valley para secuestrar tu dopamina. ¿Las consecuencias? No solo bajan tus notas. Lo más grave es que te estás perdiendo los mejores momentos de tu vida escolar, y esos no tienen botón de reinicio."
+      },
+      {
+        "id": "E4",
+        "seg": 20,
+        "visual": {
+          "tipo": "calido"
+        },
+        "plano": "Plano detalle de la mochila que se cierra; tracking shot con gimbal en la sala de sistemas. Luz cálida y música lo-fi.",
+        "voz": "Pero podemos reprogramar este hábito. Imagina una jornada donde tú tienes el control de tu atención, no una aplicación. Menos ansiedad, ideas más creativas y conexiones humanas en alta definición. La verdadera innovación hoy en día es saber cuándo apagar la pantalla."
+      },
+      {
+        "id": "E5",
+        "seg": 15,
+        "visual": {
+          "tipo": "terminal"
+        },
+        "plano": "El profesor mira a cámara y gira su portátil para mostrar el home de la nueva página. Pantalla negra con código verde que se transforma en el texto final.",
+        "voz": "La tecnología debe ser nuestra herramienta, no nuestra dueña. Por eso, mis estudiantes y yo hemos diseñado una nueva página web para toda la comunidad. Allí compartiremos los hacks necesarios para vivir una educación más sana. Entren, exploren y aprendamos a recuperar nuestra atención. Los espero en línea... pero solo un rato. Luego, a vivir en el mundo real."
+      }
+    ]
+  }
+}

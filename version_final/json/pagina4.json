@@ -1,0 +1,133 @@
+{
+  "pagina": 4,
+  "escenas": [
+    {
+      "id": "4.1",
+      "tipo": "intro",
+      "titulo": "Estudiar en casa",
+      "escenario": "En la casa de Sami, por la tarde. Sami se sienta a hacer una tarea y el celular vibra a su lado. Sami lo mira con duda.",
+      "ilustracion": "casa",
+      "expresion": "preocupado",
+      "sami": "Si me conozco, voy a terminar en el feed.",
+      "narracion": "Estudiar en casa es más difícil de cuidar: nadie te mira y el celular está ahí. Estas cuatro técnicas son para eso.",
+      "intencion": "Pasar del problema a las estrategias y ubicar el estudio fuera del colegio."
+    },
+    {
+      "id": "4.2",
+      "tipo": "tecnica",
+      "titulo": "Bloques de estudio con descansos",
+      "escenario": "Una tarjeta explica la técnica y el estudiante toca cada uno de los tres pasos para verlos. Sami la aplica con una lectura de sociales.",
+      "texto": "Toca cada paso para verlo.",
+      "interaccion": {
+        "numero": 1,
+        "nombre": "Bloques de estudio con descansos",
+        "queEs": "Estudiar en bloques cortos con pausas planeadas, para que tu mente no se agote.",
+        "pasos": [
+          { "corto": "Elige", "texto": "Elige una tarea concreta." },
+          { "corto": "Estudia", "texto": "Estudia un bloque corto (por ejemplo, 25 minutos) sin mirar el celular." },
+          { "corto": "Descansa", "texto": "Descansa 5 minutos: estírate o toma agua, sin redes." }
+        ],
+        "ejemplo": "Sami lee el capítulo de sociales en un bloque de 25 minutos y descansa 5 antes de hacer el resumen.",
+        "visual": "bloques"
+      },
+      "intencion": "Dar una primera acción sencilla para sostener el enfoque."
+    },
+    {
+      "id": "4.3",
+      "tipo": "tecnica",
+      "titulo": "Plan de estudio simple",
+      "escenario": "Misma tarjeta, nueva técnica. Sami escribe su lista del día en una hoja y le pone una hora a cada tarea.",
+      "texto": "Toca cada paso para verlo.",
+      "interaccion": {
+        "numero": 2,
+        "nombre": "Plan de estudio simple",
+        "queEs": "Decidir qué vas a estudiar antes de sentarte, para no improvisar.",
+        "pasos": [
+          { "corto": "Anota", "texto": "Anota las tareas del día." },
+          { "corto": "Ordena", "texto": "Ordénalas de la más urgente a la menos urgente." },
+          { "corto": "Pon hora", "texto": "Ponle una hora a cada una." }
+        ],
+        "ejemplo": "Sami anota: taller de ciencias a las 4:00, lectura de español a las 5:00, repaso de inglés a las 6:00.",
+        "visual": "plan",
+        "plan": [
+          { "hora": "4:00", "tarea": "Taller de ciencias" },
+          { "hora": "5:00", "tarea": "Lectura de español" },
+          { "hora": "6:00", "tarea": "Repaso de inglés" }
+        ]
+      },
+      "intencion": "Mostrar que planear reduce la tentación de improvisar con el celular."
+    },
+    {
+      "id": "4.4",
+      "tipo": "tecnica",
+      "titulo": "Entorno sin distracciones",
+      "escenario": "Sami prepara su espacio: activa «No molestar», guarda el celular en la mochila y lo deja lejos de su vista. Solo lo saca en el momento que su plan indica.",
+      "texto": "Toca cada paso para verlo.",
+      "interaccion": {
+        "numero": 3,
+        "nombre": "Entorno sin distracciones",
+        "queEs": "Preparar tu espacio para que la distracción no esté al alcance.",
+        "pasos": [
+          { "corto": "Silencia", "texto": "Activa «No molestar» en tu celular." },
+          { "corto": "Guarda", "texto": "Guárdalo fuera de tu vista (en la mochila o en otro cuarto)." },
+          { "corto": "Solo si toca", "texto": "Úsalo solo cuando tu plan lo indique." }
+        ],
+        "ejemplo": "Sami deja el celular en la mochila durante su bloque y lo saca en el descanso para responder un mensaje.",
+        "visual": "entorno"
+      },
+      "intencion": "Que veas que puedes regular tu atención silenciando notificaciones y usando el celular solo en momentos específicos."
+    },
+    {
+      "id": "4.5",
+      "tipo": "tecnica",
+      "titulo": "Autoevaluación",
+      "escenario": "Al terminar su tarea, Sami hace un pequeño balance en su cuaderno: qué logró y cuántas veces miró el celular sin querer.",
+      "texto": "Toca cada paso para verlo.",
+      "interaccion": {
+        "numero": 4,
+        "nombre": "Autoevaluación",
+        "queEs": "Revisar al final si lograste lo que te propusiste y qué te distrajo.",
+        "pasos": [
+          { "corto": "Marca", "texto": "Marca si cumpliste la tarea." },
+          { "corto": "Cuenta", "texto": "Anota cuántas veces miraste el celular sin querer." },
+          { "corto": "Ajusta", "texto": "Decide un ajuste para mañana." }
+        ],
+        "ejemplo": "Sami escribe: «Terminé el taller. Miré el celular dos veces. Mañana lo dejo en otro cuarto».",
+        "visual": "autoevaluacion"
+      },
+      "intencion": "Introducir la medición de resultados como parte de la autorregulación."
+    },
+    {
+      "id": "4.6",
+      "tipo": "hojas",
+      "titulo": "Antes y después",
+      "escenario": "Sami coloca lado a lado dos hojas de registro: la de antes y la de después de probar las técnicas. Este es un ejemplo del personaje.",
+      "sami": "Antes miraba el celular sin darme cuenta. Ahora lo uso cuando toca, y avanzo más.",
+      "narracion": "Medir te muestra si funciona. Si funciona, repítelo. Si no, cambia una sola cosa y vuelve a probar.",
+      "texto": "Elige con qué hoja te quedas.",
+      "interaccion": {
+        "aviso": "Ejemplo del personaje, no son datos reales.",
+        "hojas": [
+          { "id": "antes", "titulo": "Antes", "distracciones": 6, "tareas": 1 },
+          { "id": "despues", "titulo": "Después", "distracciones": 2, "tareas": 4 }
+        ],
+        "respuestas": {
+          "antes": "Es un buen punto de partida. Lo importante es medir para poder comparar.",
+          "despues": "Esa es la hoja de alguien que midió, ajustó y volvió a probar."
+        }
+      },
+      "intencion": "La medición final confirma que la propuesta funciona: puedes regular tu atención y comprobar tu mejora."
+    },
+    {
+      "id": "4.7",
+      "tipo": "intro",
+      "titulo": "Tú puedes regular tu atención",
+      "escenario": "Sami cierra el cuaderno con el celular guardado. La voz narradora invita a seguir.",
+      "ilustracion": "cuaderno",
+      "expresion": "alegre",
+      "narracion": "Tú puedes regular tu atención. Mira los videos para repasar y luego arma tus propias metas.",
+      "texto": "Siguiente página: videos.",
+      "intencion": "Cerrar con el mensaje «tú puedes regular tu atención» e invitar a la página 5."
+    }
+  ]
+}

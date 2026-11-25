@@ -1,0 +1,141 @@
+{
+  "pagina": 5,
+  "intro": {
+    "id": "5.1",
+    "narracion": "Elige un video para repasar. Cada uno dura menos de un minuto.",
+    "escenario": "El estudiante ve cuatro tarjetas, una por video, y elige cuál mirar."
+  },
+  "videos": [
+    {
+      "id": "v1",
+      "archivo": "../videos_tarjetas/video1.mp4",
+      "titulo": "Tu atención es una linterna",
+      "repasa": "Página 1",
+      "resumen": "Una linterna que salta entre la clase y el celular muestra cómo la atención fragmentada deja la clase a oscuras.",
+      "escenas": [
+        {
+          "id": "5.2",
+          "seg": 12,
+          "visual": { "tipo": "haz", "foco": [0] },
+          "descripcion": "Salón de clases. Sami sostiene una linterna imaginaria que ilumina la explicación del profesor.",
+          "voz": "Tu atención es como una linterna: solo ilumina una cosa a la vez."
+        },
+        {
+          "id": "5.3",
+          "seg": 14,
+          "visual": { "tipo": "haz", "foco": [0, 1, 0, 1] },
+          "descripcion": "La luz salta de la clase al celular, vuelve a la clase y salta otra vez. En la explicación quedan huecos oscuros.",
+          "voz": "Cada salto deja un pedazo de clase a oscuras. Y esos pedazos se acumulan."
+        },
+        {
+          "id": "5.4",
+          "seg": 14,
+          "visual": { "tipo": "haz", "foco": [0], "celularAbajo": true },
+          "descripcion": "Sami deja el celular boca abajo. La luz vuelve a la clase y se queda ahí.",
+          "sami": "Mismo celular. Yo decido hacia dónde apunto mi luz.",
+          "voz": "Tú decides dónde poner tu atención."
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "archivo": "../videos_tarjetas/video2.mp4",
+      "titulo": "¿Por qué es tan difícil parar?",
+      "repasa": "Página 2",
+      "resumen": "Vibraciones y un feed sin final muestran que no es falta de voluntad, sino un diseño que compite por tu atención.",
+      "escenas": [
+        {
+          "id": "5.5",
+          "seg": 12,
+          "visual": { "tipo": "vibra" },
+          "descripcion": "Clase en silencio. El celular de Sami vibra; aparece una notificación y luego otra.",
+          "voz": "Una notificación te dice: «mírame ya»."
+        },
+        {
+          "id": "5.6",
+          "seg": 15,
+          "visual": { "tipo": "feed" },
+          "descripcion": "Sami abre una notificación y un feed de videos pasa sin parar mientras el reloj del salón avanza.",
+          "sami": "Solo iba a mirar un segundo…",
+          "voz": "El scroll infinito nunca termina: no te dice «ya es suficiente»."
+        },
+        {
+          "id": "5.7",
+          "seg": 13,
+          "visual": { "tipo": "silencio" },
+          "descripcion": "Sami respira, apaga los avisos y guarda el celular. El salón vuelve a la calma.",
+          "voz": "No es falta de voluntad: es un diseño hecho para atraparte. Y puedes frenarlo."
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "archivo": "../videos_tarjetas/video3.mp4",
+      "titulo": "El día que dejó de importarme",
+      "repasa": "Página 3",
+      "resumen": "Sami muestra cómo la distracción acumulada baja el interés y las notas, y cómo recupera un motivo propio.",
+      "escenas": [
+        {
+          "id": "5.8",
+          "seg": 10,
+          "visual": { "tipo": "notas", "valores": [4.5, 4.1] },
+          "descripcion": "Varios días de clase. Sami pierde un tema, luego otro.",
+          "sami": "Me perdí un tema… luego otro…",
+          "voz": ""
+        },
+        {
+          "id": "5.9",
+          "seg": 15,
+          "visual": { "tipo": "notas", "valores": [4.5, 4.1, 3.6, 3.1, 2.7] },
+          "descripcion": "La libreta de notas de Sami baja poco a poco. Sami ya no levanta la mirada.",
+          "sami": "Entre menos entendía, menos ganas tenía.",
+          "voz": "La distracción constante se acumula: menos atención, menos interés, notas más bajas."
+        },
+        {
+          "id": "5.10",
+          "seg": 15,
+          "visual": { "tipo": "meta" },
+          "descripcion": "Sami se pregunta para qué le sirve el tema, lo conecta con algo suyo y escribe una meta pequeña.",
+          "sami": "¿Para qué me sirve esto? … Hoy solo quiero entender una idea.",
+          "voz": "Un motivo propio y una meta pequeña cambian el rumbo."
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "archivo": "../videos_tarjetas/video4.mp4",
+      "titulo": "Mi reto de una semana",
+      "repasa": "Página 4",
+      "resumen": "Sami activa «No molestar», guarda el celular, estudia en bloques y mide si funciona.",
+      "escenas": [
+        {
+          "id": "5.11",
+          "seg": 12,
+          "visual": { "tipo": "silencio", "mochila": true },
+          "descripcion": "En casa, Sami activa «No molestar» y guarda el celular en la mochila.",
+          "voz": "Paso uno: silencia y guarda."
+        },
+        {
+          "id": "5.12",
+          "seg": 13,
+          "visual": { "tipo": "bloque" },
+          "descripcion": "Sami estudia un bloque corto, descansa y saca el celular solo durante el descanso.",
+          "voz": "Úsalo cuando te toca, no cuando suena."
+        },
+        {
+          "id": "5.13",
+          "seg": 15,
+          "visual": { "tipo": "registro" },
+          "descripcion": "Sami revisa su registro: hay más tareas cumplidas y menos distracciones.",
+          "sami": "¡Sí funciona!",
+          "voz": "Medir te muestra el cambio. Tú puedes regular tu atención."
+        }
+      ]
+    }
+  ],
+  "cierre": {
+    "id": "5.14",
+    "narracion": "Ahora es tu turno: arma tus propias metas.",
+    "texto": "Siguiente página: cómo hacer listas de objetivos."
+  }
+}
